@@ -23,13 +23,13 @@ pipeline {
         volumeMounts:
         - name: registry-credentials
           mountPath: /root/.docker
-        volumes:
-        - name: registry-credentials
-          secret:
-            secretName: docker-hub-credential
-            items:
-            - key: .dockerconfigjson
-              path: config.json
+      volumes:
+      - name: registry-credentials
+        secret:
+          secretName: docker-hub-credential
+          items:
+          - key: .dockerconfigjson
+            path: config.json
 
   '''
    }
