@@ -39,7 +39,7 @@ pipeline {
     USERNAME    = 'dockraccoon'
     IMAGE_NAME  = 'myapp'
     DOCKERFILE  = 'Dockerfile'
-    IMAGE_TAG   = "$REGISTRY/${USERNAME}/${IMAGE_NAME}"
+    IMAGE_TAG   = "${REGISTRY}/${USERNAME}/${IMAGE_NAME}"
   }
   stages {
     stage('Checkout') {
