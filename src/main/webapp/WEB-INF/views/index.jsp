@@ -1,7 +1,7 @@
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt"%>
 <html>
 <head>
-<title>Hello World</title>
+<title>Hello</title>
 </head>
 <body>
 <h1>${msg}</h1>
