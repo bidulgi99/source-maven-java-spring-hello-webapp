@@ -18,8 +18,9 @@ pipeline {
   stages {
     stage('Checkout') {
   steps {
-   container('maven')
-   git branch: 'main', url: 'https://github.com/bidulgi99/source-maven-java-spring-hello-webapp.git'
+   container('maven'){
+    git branch: 'main', url: 'https://github.com/bidulgi99/source-maven-java-spring-hello-webapp.git'
+   }
   }
     }
     stage('Test Application') {
