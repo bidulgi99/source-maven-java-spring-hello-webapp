@@ -30,9 +30,11 @@ pipeline {
 	}
     }
     stage('Build Application') {
+     steps {
 	container('maven') {
           sh 'mvn clean package -DskipTests=true'
         }
+     }
     }
   }
 }
